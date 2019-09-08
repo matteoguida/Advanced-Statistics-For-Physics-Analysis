@@ -1,0 +1,14 @@
+model{
+    # data likelihood
+    for (t in 1:N){ 
+    log(mu[t]) <- b0 + b1*step(t-tau)
+    D[t] ~ dpois(mu[t])
+    y[t] ~ dpois(mu[t])
+    }
+    
+    # x ∼ dnorm(mu,tau) tau=1/sigma^2
+
+    b0 ~ dnorm(0,1)
+    b1 ~ dnorm(0,1)
+    tau ~ dunif(1, N)
+}
