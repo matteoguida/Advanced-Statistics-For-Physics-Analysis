@@ -1,2 +1,2 @@
 # Advanced-Statistics-For-Physics-Analysis
-Assignments and project for course 2018-2019 at Physics of Data  master at University of Padua.
+In the project file we extract signal over background from spectral data, in different data taking conditions, using a Markov Chain Monte Carlo (MCMC) with a Gibbs Sampler.
